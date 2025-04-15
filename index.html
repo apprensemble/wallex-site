@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WallEx – Wallet Explorer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background-color: #272727;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .screenshots, .demos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .screenshots img, .demos img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      margin: 3rem 0 1rem;
+    }
+    .highlight {
+      background: #eaf7ff;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+    .note {
+      background: #fff3cd;
+      color: #856404;
+      padding: 1rem;
+      border: 1px solid #ffeeba;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>WallEx</h1>
+    <p>Multi-wallet Portfolio Explorer – No login, no friction, just clarity.</p>
+  </header>
+  <div class="container">
+    <h2>Screenshots</h2>
+    <div class="screenshots">
+      <img src="Screenshot_20250415_212937.png" alt="Dashboard with strategy & gain breakdown">
+    </div>
+
+    <h2>Demo (GIF format)</h2>
+    <div class="demos">
+      <img src="wallex_demo1.gif" alt="Main dashboard interaction">
+      <img src="wallex_demo2_tpsl.gif" alt="TP/SL logic visual">
+      <img src="wallex_demo3_histogram.gif" alt="Histogram demo">
+    </div>
+
+    <div class="highlight">
+      <h2>Live Interactivity</h2>
+      <p>WallEx includes interactive Dash components: column sorting in the token table updates the graphs in real-time. Built-in responsiveness allows mobile access, though a redesign is planned for better usability on smaller screens (chart stacking, table resizing).</p>
+    </div>
+
+    <div class="note">
+      <h2>Known Issue (Jan 2025)</h2>
+      <p>In the current version, TP and SL logic may appear active simultaneously under certain conditions. This is under investigation and will be corrected. The app still correctly evaluates the position as a loss or gain based on final state.</p>
+    </div>
+
+    <div class="note">
+      <h2>Context</h2>
+      <p>This grant application was prepared in one day after discovering the program. Until recently, I underestimated the value of WallEx. Feedback at events and from builders convinced me to bring it forward. This version is a functional MVP, and this grant would help bring it to a stable, public release.</p>
+    </div>
+
+    <h2>Stack</h2>
+    <p><strong>Backend:</strong> Python using APIs from CoinMarketCap, Moralis, Zerion</p>
+    <p><strong>Frontend:</strong> Dash, Plotly, pandas</p>
+    <p><strong>Other:</strong> selenium, dash_ag_grid, dash_daq, JSON (currently) → SQLite (planned)</p>
+  </div>
+  <footer>
+    &copy; 2025 WallEx Project. All rights reserved.
+  </footer>
+</body>
+</html>
