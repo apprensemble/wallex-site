@@ -98,6 +98,23 @@
     <p><strong>Backend:</strong> Python using APIs from CoinMarketCap, Moralis, Zerion</p>
     <p><strong>Frontend:</strong> Dash, Plotly, pandas</p>
     <p><strong>Other:</strong> selenium, dash_ag_grid, dash_daq, JSON (currently) → SQLite (planned)</p>
+
+    <h2 id="budget">Budget Breakdown</h2>
+    <ul>
+      <li><strong>Milestone 1:</strong> Code cleanup & technical stabilization – 6,000 POL (2 weeks)</li>
+      <li><strong>Milestone 2:</strong> Multi-user support & transaction tracking (DB refactor) – 12,000 POL (4 weeks)</li>
+      <li><strong>Milestone 3:</strong> Deployment options (SaaS / self-hosted) + closed beta – 10,000 POL (3 weeks)</li>
+      <li><strong>Milestone 4:</strong> UI/UX redesign and mobile optimization – 12,000 POL (3 weeks)</li>
+    </ul>
+    <p>The amounts mainly reflect the cost of solo development required for survival during 3 months of full-time work. They also include testnet usage, occasional contractor help (e.g., UI polish), and infrastructure costs (storage, compute, CI).</p>
+
+    <h2>Sustainability & Support</h2>
+    <p>Although WallEx is currently developed solo, I’m actively seeking collaborators for specific parts (especially frontend UX and data integrity). I’ve already started receiving interest from peers met during hackathons. The grant will help bootstrap the project's growth until a small team is secured.</p>
+
+    <h2 id="technical">Technical & Security Considerations</h2>
+    <p>The backend will be transitioned from JSON storage to SQLite for reliability and multi-user support. Basic input validation and error logging are already implemented.</p>
+    <p>Security will include local encryption of user config files (for self-hosted mode), optional read-only wallet tracking, and rate-limiting for API calls. The hosted version will use server-side isolation and token-based access.</p>
+
   </div>
   <footer>
     &copy; 2025 WallEx Project. All rights reserved.
